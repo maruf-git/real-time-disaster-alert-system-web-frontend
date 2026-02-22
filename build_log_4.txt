@@ -1,0 +1,40 @@
+
+> frontend@0.1.0 build
+> next build
+
+ ΓÜá Invalid next.config.mjs options detected: 
+ ΓÜá     Unrecognized key(s) in object: 'reactCompiler'
+ ΓÜá See more info here: https://nextjs.org/docs/messages/invalid-next-config
+   Γû▓ Next.js 15.1.0
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully
+   Linting and checking validity of types ...
+ Γ¿» ESLint: Cannot find module 'C:\Users\mun3g\OneDrive\Desktop\11th-hour-disaster-alert\frontend\node_modules\eslint-config-next\core-web-vitals' imported from C:\Users\mun3g\OneDrive\Desktop\11th-hour-disaster-alert\frontend\eslint.config.mjs Did you mean to import "eslint-config-next/core-web-vitals.js"?
+   Collecting page data ...
+   Generating static pages (0/11) ...
+   Generating static pages (2/11) 
+   Generating static pages (5/11) 
+   Generating static pages (8/11) 
+ Γ£ô Generating static pages (11/11)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+Γöî Γùï /                                    3.8 kB          109 kB
+Γö£ Γùï /_not-found                          979 B           106 kB
+Γö£ Γùï /admin                               2.24 kB         108 kB
+Γö£ Γùï /admin/alert_logs                    2.21 kB         108 kB
+Γö£ Γùï /admin/disasters                     2.44 kB         108 kB
+Γö£ Γùï /admin/locations                     2.71 kB         108 kB
+Γö£ Γùï /admin/rules                         3.07 kB         108 kB
+Γöö Γùï /report                              3.15 kB         109 kB
++ First Load JS shared by all            105 kB
+  Γö£ chunks/4bd1b696-eafe63c2999b703a.js  52.9 kB
+  Γö£ chunks/517-c8d142f30dab7f76.js       50.5 kB
+  Γöö other shared chunks (total)          1.98 kB
+
+
+Γùï  (Static)  prerendered as static content
+

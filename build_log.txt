@@ -1,0 +1,293 @@
+
+> frontend@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.1.6 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 10 errors:
+./src/app/admin/page.js:4:1
+Module not found: Can't resolve '@/lib/api'
+  2 |
+  3 | import { useState, useEffect } from 'react';
+> 4 | import { api } from '@/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import { LayoutDashboard, Map, Flame, Ruler, Activity, RefreshCw } from 'lucide-react';
+  6 | import LocationTab from '@/components/admin/LocationTab';
+  7 | import RulesTab from '@/components/admin/RulesTab';
+
+Import map: aliased to relative './src/lib/api' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/page.js [Client Component Browser]
+    ./src/app/admin/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/page.js [Client Component SSR]
+    ./src/app/admin/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/admin/page.js:3:1
+Module not found: Can't resolve '@/lib/api'
+  1 | 'use client';
+  2 | import { useState, useEffect } from 'react';
+> 3 | import { api } from '@/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { LayoutDashboard, Map, Flame, Ruler, Activity, RefreshCw } from 'lucide-react';
+  5 | import LocationTab from '@/components/admin/LocationTab';
+  6 | import RulesTab from '@/components/admin/RulesTab';
+
+Import map: aliased to relative './src/lib/api' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/admin/page.js [Client Component Browser]
+    ./src/app/admin/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/app/admin/page.js [Client Component SSR]
+    ./src/app/admin/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/report/page.js:5:1
+Module not found: Can't resolve '@/lib/api'
+  3 | import { c as _c } from "react/compiler-runtime";
+  4 | import { useState, useEffect } from 'react';
+> 5 | import { api } from '@/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Send, MapPin, AlertTriangle } from 'lucide-react';
+  7 | export default function ReportPage() {
+  8 |   const $ = _c(45);
+
+Import map: aliased to relative './src/lib/api' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/report/page.js [Client Component Browser]
+    ./src/app/report/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/app/report/page.js [Client Component SSR]
+    ./src/app/report/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/app/report/page.js:3:1
+Module not found: Can't resolve '@/lib/api'
+  1 | 'use client';
+  2 | import { useState, useEffect } from 'react';
+> 3 | import { api } from '@/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Send, MapPin, AlertTriangle } from 'lucide-react';
+  5 |
+  6 | export default function ReportPage() {
+
+Import map: aliased to relative './src/lib/api' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/report/page.js [Client Component Browser]
+    ./src/app/report/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/app/report/page.js [Client Component SSR]
+    ./src/app/report/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/components/admin/DisasterTab.js:5:1
+Module not found: Can't resolve '@/lib/api'
+  3 | import { c as _c } from "react/compiler-runtime";
+  4 | import { useState } from 'react';
+> 5 | import { api } from '@/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Flame, Plus, Trash2 } from 'lucide-react';
+  7 | export default function DisasterTab(t0) {
+  8 |   const $ = _c(34);
+
+Import map: aliased to relative './src/lib/api' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/admin/DisasterTab.js [Client Component Browser]
+    ./src/app/admin/page.js [Client Component Browser]
+    ./src/app/admin/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/admin/DisasterTab.js [Client Component SSR]
+    ./src/app/admin/page.js [Client Component SSR]
+    ./src/app/admin/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/components/admin/DisasterTab.js:3:1
+Module not found: Can't resolve '@/lib/api'
+  1 | 'use client';
+  2 | import { useState } from 'react';
+> 3 | import { api } from '@/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Flame, Plus, Trash2 } from 'lucide-react';
+  5 |
+  6 | export default function DisasterTab({ disasters, refresh }) {
+
+Import map: aliased to relative './src/lib/api' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/admin/DisasterTab.js [Client Component Browser]
+    ./src/app/admin/page.js [Client Component Browser]
+    ./src/app/admin/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/admin/DisasterTab.js [Client Component SSR]
+    ./src/app/admin/page.js [Client Component SSR]
+    ./src/app/admin/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/components/admin/LocationTab.js:5:1
+Module not found: Can't resolve '@/lib/api'
+  3 | import { c as _c } from "react/compiler-runtime";
+  4 | import { useState } from 'react';
+> 5 | import { api } from '@/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { MapPin, Plus, Power, Trash2 } from 'lucide-react';
+  7 | export default function LocationTab(t0) {
+  8 |   const $ = _c(42);
+
+Import map: aliased to relative './src/lib/api' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/admin/LocationTab.js [Client Component Browser]
+    ./src/app/admin/page.js [Client Component Browser]
+    ./src/app/admin/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/admin/LocationTab.js [Client Component SSR]
+    ./src/app/admin/page.js [Client Component SSR]
+    ./src/app/admin/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/components/admin/LocationTab.js:3:1
+Module not found: Can't resolve '@/lib/api'
+  1 | 'use client';
+  2 | import { useState } from 'react';
+> 3 | import { api } from '@/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { MapPin, Plus, Power, Trash2 } from 'lucide-react';
+  5 |
+  6 | export default function LocationTab({ locations, refresh }) {
+
+Import map: aliased to relative './src/lib/api' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/admin/LocationTab.js [Client Component Browser]
+    ./src/app/admin/page.js [Client Component Browser]
+    ./src/app/admin/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/admin/LocationTab.js [Client Component SSR]
+    ./src/app/admin/page.js [Client Component SSR]
+    ./src/app/admin/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/components/admin/RulesTab.js:5:1
+Module not found: Can't resolve '@/lib/api'
+  3 | import { c as _c } from "react/compiler-runtime";
+  4 | import { useState } from 'react';
+> 5 | import { api } from '@/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Trash2, Plus } from 'lucide-react';
+  7 | export default function RulesTab(t0) {
+  8 |   const $ = _c(68);
+
+Import map: aliased to relative './src/lib/api' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/admin/RulesTab.js [Client Component Browser]
+    ./src/app/admin/page.js [Client Component Browser]
+    ./src/app/admin/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/admin/RulesTab.js [Client Component SSR]
+    ./src/app/admin/page.js [Client Component SSR]
+    ./src/app/admin/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./src/components/admin/RulesTab.js:3:1
+Module not found: Can't resolve '@/lib/api'
+  1 | 'use client';
+  2 | import { useState } from 'react';
+> 3 | import { api } from '@/lib/api';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Trash2, Plus } from 'lucide-react';
+  5 |
+  6 | export default function RulesTab({ rules, locations, disasters, refresh }) {
+
+Import map: aliased to relative './src/lib/api' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/components/admin/RulesTab.js [Client Component Browser]
+    ./src/app/admin/page.js [Client Component Browser]
+    ./src/app/admin/page.js [Server Component]
+
+  Client Component SSR:
+    ./src/components/admin/RulesTab.js [Client Component SSR]
+    ./src/app/admin/page.js [Client Component SSR]
+    ./src/app/admin/page.js [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (./src/app/admin/page.js:4:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/admin/page.js:3:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/report/page.js:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/app/report/page.js:3:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/components/admin/DisasterTab.js:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/components/admin/DisasterTab.js:3:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/components/admin/LocationTab.js:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/components/admin/LocationTab.js:3:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/components/admin/RulesTab.js:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./src/components/admin/RulesTab.js:3:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
