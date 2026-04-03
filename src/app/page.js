@@ -69,7 +69,7 @@ export default function Home() {
             return;
         }
         setWeatherLoading(true);
-        fetch(`http://localhost:5000/api/weather/current?location_id=${selectedLocationId}`)
+        fetch(`${process.env.NEXT_PUBLIC_API_URL}/weather/current?location_id=${selectedLocationId}`)
             .then(res => res.json())
             .then(data => {
                 if (data.weather) {
@@ -92,14 +92,14 @@ export default function Home() {
     }, [selectedLocationId]);
 
     const fetchLocations = () => {
-        fetch('http://localhost:5000/api/admin/locations?limit=all&activeOnly=true')
+        fetch(`${process.env.NEXT_PUBLIC_API_URL}/admin/locations?limit=all&activeOnly=true`)
             .then(res => res.json())
             .then(data => setLocations(data.data || []))
             .catch(console.error);
     };
 
     const fetchDisasters = () => {
-        fetch('http://localhost:5000/api/admin/disasters?limit=all&activeOnly=true')
+        fetch(`${process.env.NEXT_PUBLIC_API_URL}/admin/disasters?limit=all&activeOnly=true`)
             .then(res => res.json())
             .then(data => setDisasters(data.data || []))
             .catch(console.error);
@@ -107,7 +107,7 @@ export default function Home() {
 
     const fetchAlerts = () => {
         setLoading(true);
-        fetch('http://localhost:5000/api/alerts')
+        fetch(`${process.env.NEXT_PUBLIC_API_URL}/alerts`)
             .then(res => res.json())
             .then(data => {
                 setAlerts(data);
