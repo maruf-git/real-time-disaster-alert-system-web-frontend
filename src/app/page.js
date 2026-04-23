@@ -129,7 +129,7 @@ export default function Home() {
     fetch(`${process.env.NEXT_PUBLIC_API_URL}/alerts`)
       .then((res) => res.json())
       .then((data) => {
-        setAlerts(data);
+        setAlerts(Array.isArray(data) ? data : []);
         setLoading(false);
         setLastUpdated(new Date());
       })
